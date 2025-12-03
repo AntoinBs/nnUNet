@@ -4,7 +4,7 @@ from nnunetv2.training.loss.deep_supervision import DeepSupervisionWrapper
 from nnunetv2.training.nnUNetTrainer.nnUNetTrainer import nnUNetTrainer
 from nnunetv2.training.loss.dice_ce_cldice_loss import HybridDiceCLDiceLoss  # Import the custom loss
 
-class nnUNetTrainerFocalDiceBCELoss(nnUNetTrainer):
+class nnUNetTrainerDiceCEClDiceLoss(nnUNetTrainer):
     def _build_loss(self):
         self.print_to_log_file("Using Dice + CE + clDice Loss for training.")
 
